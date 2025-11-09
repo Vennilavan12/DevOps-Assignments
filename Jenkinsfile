@@ -11,12 +11,6 @@ pipeline {
         }
 
         stage('Build') {
-            agent {
-                docker {
-                    image 'node:16-alpine'
-                    args '-u root -v /var/run/docker.sock:/var/run/docker.sock'
-                }
-            }
             steps {
                 script {
                     sh 'npm install'
