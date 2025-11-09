@@ -28,7 +28,7 @@ pipeline {
                 }
             }
         }
-        stage('Docker Build') {
+        stage('Docker Deploy') {
             steps {
                 script {
                     sh "docker run -itd -p 80:3000 $DockerImage"
