@@ -38,10 +38,7 @@ pipeline {
     }
     post {
       success {
-
-      }
-      failure {
-
+            mail bcc: '', body: '"Good news! The pipeline completed successfully.\\nCheck build details at: ${env.BUILD_URL}', cc: '', from: '', replyTo: '', subject: 'Jenkins Job Successful: ${env.JOB_NAME} #${env.BUILD_NUMBER}', to: 'vennilavan98@gmail.com'
       }
     }
 }
