@@ -22,7 +22,7 @@ pipeline {
         stage('Docker Build') {
             steps {
                 script {
-                    sh "docker build -t $DockerImage"
+                    sh "docker build -t $DockerImage ."
                     sh "docker login -u $Docker_user -p $Docker_pass"
                     sh "docker push $DockerImage"
                 }
