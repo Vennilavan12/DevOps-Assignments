@@ -13,7 +13,7 @@ describe('Simple Node.js Application', () => {
       .get('/')
       .end((err, res) => {
         expect(res).to.have.status(200);
-        expect(res.text).to.equal('Hello, AWS Elastic Beanstalk!');
+        expect(res.text).to.equal('Hello, This is Vennilavan and application run for DevOps Assesment!');
         done();
       });
   });
