@@ -5,7 +5,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
-  res.send('Hello, AWS Elastic Beanstalk!');
+  res.send('Hello, This is Vennilavan and application run for DevOps Assesment!');
 });
 
 // Export the app object
