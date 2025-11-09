@@ -14,7 +14,7 @@ pipeline {
             agent {
                 docker {
                     image 'node:16-alpine'
-                    args '-u root'
+                    args '-u root -v /var/run/docker.sock:/var/run/docker.sock'
                 }
             }
             steps {
