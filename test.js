@@ -8,7 +8,7 @@ chai.use(chaiHttp);
 const expect = chai.expect;
 
 describe('Simple Node.js Application', () => {
-  it('should return "Hello, AWS Elastic Beanstalk!" on / GET', (done) => {
+  it('should return "Hello, This is Vennilavan and application run for DevOps Assesment!" on / GET', (done) => {
     chai.request(app)
       .get('/')
       .end((err, res) => {
